@@ -1,15 +1,18 @@
+// declaration variable ecran affichage
 var inputLabel = document.getElementById('inputLabel');
 
+// declaration fonction appuie bouton
 function pushBtn(obj) {
 
+// declaration variable bouton
     var pushed = obj.innerHTML;
 
     if (pushed == '=') {
-            // Calculate
+            // Calcul
             inputLabel.innerHTML = eval(inputLabel.innerHTML);
 
         } else if (pushed == 'AC') {
-            // All Clear
+            // Nettoyage ecran
             inputLabel.innerHTML = '0';
 
         } else {
@@ -22,4 +25,3 @@ function pushBtn(obj) {
             }
         }
     }
-    
